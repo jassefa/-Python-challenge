@@ -1,3 +1,3 @@
-hw_file = open("election_data.csv.csv", "r")
+hw_file = open("test-election_data.csv", "r")
 print(hw_file.read())
 hw_file.close()
