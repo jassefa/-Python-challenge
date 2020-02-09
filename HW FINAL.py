@@ -1,7 +1,6 @@
-
+import os
 import csv
 hw_file = open("test-election_data.csv", "r")
-file_output = ("test-election_data.csv.text")
 reader = csv.reader(hw_file)
 header = next(reader)
 number_of_votes = 0
@@ -30,8 +29,15 @@ for candidate in num_per_Can:
     if (votes > winning_count):
         winning_count = votes
         winner = candidate
+    
+for listof in candidate_list:
+    print("[" + (listof (votes)) + "] ")
+#print("Total Votes:" + str(number_of_votes))
+#print("The Winner:" + winner)
 
-
-
+#with open("poll.txt", "w") as PollPy:
+#    PollPy.write(f"    \n")
+#print(" Total Votes: "+ str(number_of_votes) + " The Winner:" + winner)
+    
     
 
