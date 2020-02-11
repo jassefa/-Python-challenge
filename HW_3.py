@@ -1,6 +1,6 @@
 import os
 import csv
-hw_file = open("test-election_data.csv", "r")
+hw_file = open("election_dat.csv", "r")
 reader = csv.reader(hw_file)
 header = next(reader)
 number_of_votes = 0
